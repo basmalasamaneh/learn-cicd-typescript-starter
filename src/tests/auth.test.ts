@@ -19,7 +19,7 @@ describe("getAPIKey", () => {
       getAPIKey({
         authorization: "ApiKey abc123",
       }),
-    ).toBe("wrong-key");
+    ).toBe("abc123");
   });
 
   test("returns null when the ApiKey header has no key", () => {
